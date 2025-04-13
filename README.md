@@ -44,3 +44,33 @@ El sistema se compone de los siguientes módulos:
 2. La API publica el mensaje en una cola RabbitMQ.
 3. Un worker escucha esa cola y procesa el mensaje.
 4. El resultado puede devolverse de forma asincrónica.
+```
+## 🧪 Ejecución del Proyecto
+
+### 1. Instalar dependencias
+
+Asegúrate de tener Python 3 instalado, luego ejecuta:
+
+```bash
+pip install -r requirements.txt
+```
+### 2. Si tienes Docker, puedes levantar RabbitMQ fácilmente con:
+
+```bash
+docker run -d --hostname my-rabbit --name rabbitmq \
+  -p 5672:5672 -p 15672:15672 rabbitmq:3-management
+```
+### 3. Abre cuatro terminales y ejecuta en cada una:
+
+```bash
+python calculator_server.py
+python rabbitmq_worker.py
+python worker.py
+python api_gateway.py
+```
+# 4. Una vez todo esté corriendo, prueba el sistema con:
+
+```bah 
+python calculator_client.py
+```
+Esto enviará una solicitud al API Gateway, que será procesada de forma asincrónica y eventualmente devolverá una respuesta desde el worker.
