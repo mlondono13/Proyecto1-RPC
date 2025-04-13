@@ -5,13 +5,13 @@ Este proyecto implementa un middleware para la comunicación asincrónica entre 
 
 ---
 
-## 📌 Objetivo
+## Objetivo
 
 Diseñar e implementar un **middleware asincrónico** que permita el envío y procesamiento de mensajes entre aplicaciones distribuidas de forma **eficiente, desacoplada y tolerante a fallos**.
 
 ---
 
-## ⚙️ Tecnologías Utilizadas
+## Tecnologías Utilizadas
 
 - Python 3
 - gRPC + Protocol Buffers
@@ -22,7 +22,7 @@ Diseñar e implementar un **middleware asincrónico** que permita el envío y pr
 
 ---
 
-## 🧩 Arquitectura General
+## Arquitectura General
 
 El sistema se compone de los siguientes módulos:
 
@@ -37,7 +37,7 @@ El sistema se compone de los siguientes módulos:
 
 ---
 
-## 🔁 Flujo del Sistema
+## Flujo del Sistema
 
 ```text
 1. El cliente realiza una solicitud a través de gRPC (API Gateway).
