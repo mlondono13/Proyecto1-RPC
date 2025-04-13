@@ -1,6 +1,6 @@
 import requests
 
-API_GATEWAY_URL = "http://localhost:8000/sum/"
+API_GATEWAY_URL = "http://localhost:8001/sum/"
 
 def run():
     num1 = 30

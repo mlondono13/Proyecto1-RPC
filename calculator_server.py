@@ -12,7 +12,7 @@ class CalculatorServicer(calculator_pb2_grpc.CalculatorServicer):
 def serve():
     server = grpc.server(futures.ThreadPoolExecutor(max_workers=10))
     calculator_pb2_grpc.add_CalculatorServicer_to_server(CalculatorServicer(), server)
-    server.add_insecure_port('[::]:50052')
+    server.add_insecure_port('localhost:60000')
     server.start()
     print("Servidor gRPC en ejecución en el puerto 50052")
     server.wait_for_termination()

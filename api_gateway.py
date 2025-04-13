@@ -23,7 +23,7 @@ def send_to_rabbitmq(num1, num2):
 
 # Conexión con el servidor gRPC
 def get_grpc_stub():
-    channel = grpc.insecure_channel('localhost:50052')
+    channel = grpc.insecure_channel('localhost:60000')
     return calculator_pb2_grpc.CalculatorStub(channel)
 
 @app.get("/sum/")
@@ -39,4 +39,4 @@ def sum_numbers(num1: int, num2: int):
 
 if __name__ == "__main__":
     import uvicorn
-    uvicorn.run(app, host="0.0.0.0", port=8000)
+    uvicorn.run(app, host="0.0.0.0", port=8001)
