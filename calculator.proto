@@ -4,16 +4,19 @@ package calculator;
 
 // Definimos el servicio Calculator
 service Calculator {
-    rpc Sum (SumRequest) returns (SumResponse);
+    rpc Sum (OperationRequest) returns (OperationResponse);
+    rpc Subtract (OperationRequest) returns (OperationResponse);
+    rpc Multiply (OperationRequest) returns (OperationResponse);
+    rpc Divide (OperationRequest) returns (OperationResponse);
 }
 
 // Mensaje de solicitud con dos números
-message SumRequest {
+message OperationRequest {
     int32 num1 = 1;
     int32 num2 = 2;
 }
 
 // Mensaje de respuesta con el resultado
-message SumResponse {
-    int32 result = 1;
+message OperationResponse {
+    double result = 1;
 }
