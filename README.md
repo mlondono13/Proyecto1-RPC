@@ -45,7 +45,7 @@ El sistema se compone de los siguientes módulos:
 3. Un worker escucha esa cola y procesa el mensaje.
 4. El resultado puede devolverse de forma asincrónica.
 ```
-## 🧪 Ejecución del Proyecto
+## Ejecución del Proyecto
 
 ### 1. Instalar dependencias
 
