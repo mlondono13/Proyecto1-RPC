@@ -7,8 +7,14 @@
 # Proyecto 1: Comunicación entre procesos remotos con mecanismo de recuperación de fallas
 
 # 1. Breve descripción
+Este proyecto implementa uns sistema de cálculo distribuido utilizando gRPC y RabbitMQ para la comunicación entre procesos remotos. El sistema permite realizar operaciones aritméticas básicas( suma, resta, multiplicación y división) a través de un cliente que se comunica con un servidor mediante un API Gateway. Además, se implementa un mecanismo de recuperación de fallas para garantizar la alta disponibilidad del servicio. 
+
 ## 1.1 Aspectos cumplidos
 
+- Implementación de un cliente que se comunica con un API Gateway utilizando gRPC.
+- Desarrollo de un API Gateway que enruta las solicitudes a través de RabbitMQ hacia los workers correpondientes
+- Creación de workers que realizan operaciones aritméticas básicas y devuelven los resultados al cliente.
+- Implementación 
 ## 1.2 Aspectos no cumplidos
 
 # 2. Información general de diseño de alto nivel, arquitectura, patrones, mejores prácticas utilizadas
