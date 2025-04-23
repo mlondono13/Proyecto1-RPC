@@ -1,4 +1,6 @@
-# Proyecto1-RPC
+# ST0263-7290
+
+# Estudiantes: Marcela Londoño Leon, mlondonol@eafit.edu.co - Luis Fernando Posada, lfposadac@eafit.edu.co - Juan Martin Betancur, jbetancur5@eafit.edu.co - Jose Miguel Burgos, jmburgoc@eafit.edu.co
 
 # 📨 Middleware de Operaciones Matemáticas Asincrónicas entre Aplicaciones
 
