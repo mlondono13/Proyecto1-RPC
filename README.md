@@ -109,10 +109,9 @@ docker run -d --hostname my-rabbit --name rabbitmq \
 ### 3. Abre cuatro terminales y ejecuta en cada una:
 
 ```bash
+python api_gateway.py
 python calculator_server.py
 python rabbitmq_worker.py
-python worker.py
-python api_gateway.py
 ```
 # 4. Una vez todo esté corriendo, prueba el sistema con:
 
