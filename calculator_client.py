@@ -5,7 +5,7 @@ API_GATEWAY_URL = "http://localhost:8001/calculate/"
 def run():
     num1 = 30
     num2 = 5
-    operation = "mul"  # Cambia entre: sum, sub, mul, div
+    operation = "sum"  # Cambia entre: sum, sub, mul, div
 
     response = requests.get(API_GATEWAY_URL, params={
         "num1": num1,
